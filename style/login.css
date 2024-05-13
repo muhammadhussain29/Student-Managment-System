@@ -1,0 +1,43 @@
+.wrapper {
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+	background-color: #003366;
+}
+
+.logo img {
+	min-width: 100px;
+	max-width: 250px;
+}
+
+form a:hover {
+	color: blue;
+}
+
+input[type="text"],
+input[type="password"] {
+	display: block;
+	padding: 6px 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.social-icons i {
+	font-size: 1rem;
+	color: #fff;
+	background-color: #003366;
+	margin: 4px 8px;
+	padding: 8px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+	.logo img {
+		width: 180px;
+	}
+}

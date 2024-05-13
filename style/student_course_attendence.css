@@ -1,0 +1,91 @@
+/* This file works for both attendence and courses page */
+
+/* Header section */
+.inf-content {
+    border: 1px solid #DDDDDD;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 25%);
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 10rem;
+}
+
+/* Course enrolled in table */
+.table__body {
+    width: 100%;
+    background-color: #fffb;
+    margin: 12px 0px;
+    border-radius: .6rem;
+    overflow: auto;
+    overflow: overlay;
+}
+
+.table__body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.table__body table {
+    width: 100%;
+}
+
+.table__body table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+.table__body thead th {
+    background-color: rgb(32, 31, 124);
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.table__body tbody tr:nth-child(even) {
+    background-color: rgba(214, 214, 214, 0.5);
+}
+
+.table__body tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+.table__body tbody tr:hover {
+    background-color: rgba(214, 214, 214, 0.7) !important;
+}
+
+.table__body tbody tr td {
+    transition: .2s ease-in-out;
+}
+
+.table__body thead th span.icon-arrow {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+
+@media (max-width: 765px) {
+    .table__body td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
